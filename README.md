@@ -22,7 +22,6 @@ SHAP (SHapley Additive exPlanations): est une approche théorique du jeu pour ex
 Deep learning example with GradientExplainer (TensorFlow/Keras/PyTorch models)
 ![image](https://user-images.githubusercontent.com/102509671/210154575-d167d24d-59eb-48ac-80b8-1cddbb79c1ad.png)
 
-Sample notebooks
 
 [League of Legends Win Prediction with XGBoost](https://slundberg.github.io/shap/notebooks/League%20of%20Legends%20Win%20Prediction%20with%20XGBoost.html) - À l'aide d'un ensemble de données Kaggle de 180 000 matchs classés de League of Legends, nous formons et expliquons un modèle d'arbre de renforcement de gradient avec XGBoost pour prédire si un joueur gagnera son match.
 
@@ -38,3 +37,29 @@ Une implémentation de Kernel SHAP, une méthode indépendante du modèle pour e
 
 
 [Modèle ImageNet VGG16 avec Keras](https://slundberg.github.io/shap/notebooks/ImageNet%20VGG16%20Model%20with%20Keras.html) - Expliquez les prédictions du réseau de neurones convolutionnel VGG16 classique pour une image. Cela fonctionne en appliquant la méthode Kernel SHAP indépendante du modèle à une image segmentée en super-pixels.
+
+# Modèle 
+
+Modèle réalisé à l'aide de cloudcraft.co
+
+![image](https://user-images.githubusercontent.com/102509671/210156717-b051a575-e699-44d0-9541-56d63f8c426c.png)
+
+
+
+Explication de chaque composant :
+
+Modèle de réseau neuronal : Il s'agit du modèle d'apprentissage automatique réel qui a été formé pour effectuer une tâche spécifique, comme la classification d'images ou la traduction de langues. Le modèle est construit à l'aide de TensorFlow.
+
+Amazon SageMaker Training Job : Il s'agit du service AWS qui est utilisé pour former le modèle de réseau neuronal. Il prend les données d'entraînement et entraîne le modèle à l'aide d'une variété d'algorithmes et d'hyperparamètres.
+
+Amazon S3 Bucket : Il s'agit d'un service de stockage sur AWS où le modèle formé est enregistré une fois le travail de formation terminé. Le modèle est enregistré sous la forme d'un artefact de modèle.
+
+Dépôt Amazon Elastic Container Registry (ECR) : Il s'agit d'un service qui vous permet de stocker des images Docker, y compris celles qui contiennent votre modèle TensorFlow.
+
+Amazon Elastic Container Service (ECS) Fargate Task : Il s'agit d'un service qui vous permet d'exécuter des conteneurs Docker dans le cloud, y compris ceux qui contiennent votre modèle TensorFlow. Vous pouvez utiliser la tâche ECS Fargate pour déployer votre modèle en tant que microservice.
+
+Amazon API Gateway Endpoint : Il s'agit d'un service qui agit comme un proxy inverse pour la tâche ECS Fargate, ce qui vous permet d'accéder en toute sécurité à la tâche depuis des clients externes.
+
+Application client : Il peut s'agir de n'importe quelle application qui souhaite utiliser le modèle de réseau neuronal formé et déployé, comme une application Web ou une application mobile.
+
+Cette architecture vous permet de former et de déployer un modèle TensorFlow sur AWS en tant que microservice, et d'y accéder via un point de terminaison API qui peut être appelé par des applications clientes. Vous pouvez ensuite utiliser des techniques telles que l'importance des caractéristiques ou la propagation de la pertinence par couches pour interpréter les prédictions du modèle et comprendre comment le modèle est...
