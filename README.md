@@ -1,10 +1,10 @@
 # DAT
 DAT projet
 
-Sujet: Explication des reseaux de neurones
+# Sujet: Explication des reseaux de neurones
 En premier temps, nous avons un modèle de réseau de neurones pouvant nous aider à comprendre le fonctionnement de modèles. Concrètement, le projet à pour but récupérer des modèles de deep learning complexe, et d’en extraire les caractéristiques les plus impoortantes afin de comprendre comment le modèle apprends et quelles sont ses caractéristiques les plus importantes. 
 
-Technologies utilisées :
+# Technologies utilisées :
 Amazon EC2 : Amazon EC2 fournit une interface utilisateur basée sur le Web, la console Amazon EC2. Si on est inscrit à un compte AWS, on peut accéder à la console Amazon EC2 en se connectant à la AWS Management Console et en sélectionnant EC2 depuis la page d'accueil de la console. Ils proposent également un système de « pay as you go »  avec les On-Demand instances : Payez les instances que vous utilisez à la seconde, avec un minimum de 60 secondes, sans engagement à long terme ou paiement initial.
 
 S3 : Amazon S3 est un service de stockage en nuage qui offre un stockage évolutif et à haute durabilité pour les données. Il est conçu pour stocker et récupérer n'importe quelle quantité de données de n'importe où sur le Web et est couramment utilisé par les entreprises de toutes tailles. S3 est payant, sans frais initiaux ni engagements à long terme, et propose une gamme de classes de stockage pour différents scénarios de stockage de données.
@@ -17,7 +17,7 @@ La bibliothèque est composée de plusieurs modules, le module Attribution Metho
 
 SHAP (SHapley Additive exPlanations): est une approche théorique du jeu pour expliquer la sortie de tout modèle d'apprentissage automatique. Il relie l'allocation optimale des crédits aux explications locales en utilisant les valeurs classiques de Shapley de la théorie des jeux et leurs extensions associées (voir les articles pour les détails et les citations).
 
-Exemples modèles:
+# Exemples modèles:
 
 Deep learning example with GradientExplainer (TensorFlow/Keras/PyTorch models)
 ![image](https://user-images.githubusercontent.com/102509671/210154575-d167d24d-59eb-48ac-80b8-1cddbb79c1ad.png)
