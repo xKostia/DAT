@@ -1,8 +1,11 @@
 # DAT
+
+**Bosch Alexandre , Kamwag Laetitia , Leroux Nicolas**
+
+
 DAT De possibilité d'architecture cloud pour notre projet de fin d'études.
 
 
-Bosch Alexandre , Kamwag Laetitia , Leroux Nicolas
 
 
 # Sujet: Explication des reseaux de neurones
