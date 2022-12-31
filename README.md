@@ -1,5 +1,9 @@
 # DAT
-DAT projet
+DAT De possibilité d'architecture cloud pour notre projet de fin d'études.
+
+
+Bosch Alexandre , Kamwag Laetitia , Leroux Nicolas
+
 
 # Sujet: Explication des reseaux de neurones
 En premier temps, nous avons un modèle de réseau de neurones pouvant nous aider à comprendre le fonctionnement de modèles. Concrètement, le projet à pour but récupérer des modèles de deep learning complexe, et d’en extraire les caractéristiques les plus impoortantes afin de comprendre comment le modèle apprends et quelles sont ses caractéristiques les plus importantes. 
